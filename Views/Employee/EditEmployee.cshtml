@@ -1,0 +1,13 @@
+﻿@model Dropbox05.Models.Employee
+<h3>Edit the Employee</h3>
+<form asp-controller="Employee" asp-action="EditEmployee">
+    method="post">
+    <input asp-for="EmployeeId" type="hidden" />
+    <label asp-for="EmployeeName"></label>
+    <input asp-for="EmployeeName" />
+    <br />
+    <label asp-for="HourlyWage"></label>
+    <input asp-for="HourlyWage" />
+    <br />
+    <button type="submit">Update Employee</button>
+</form>
